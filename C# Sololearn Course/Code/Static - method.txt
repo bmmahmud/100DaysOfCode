@@ -1,0 +1,10 @@
+class Dog
+{
+  public static void Bark() {
+    Console.WriteLine("Woof");
+  }
+}
+static void Main(string[] args)
+{
+  Dog.Bark();
+}
