@@ -1,0 +1,43 @@
+static void Main(string[] args)
+        {
+            int number1 = Convert.ToInt16(Console.ReadLine());
+            int number2 = Convert.ToInt16(Console.ReadLine());
+
+            if (number1 > number2)
+            {
+                Console.WriteLine(number1+" is Bigger ");
+            }
+            else
+            {
+                Console.WriteLine(number2 + " is Bigger ");
+            }
+            Console.ReadKey();
+        }
+
+
+
+static void Main(string[] args)
+        {
+            int number1 = Convert.ToInt16(Console.ReadLine());
+            int number2 = Convert.ToInt16(Console.ReadLine());
+            int number3 = Convert.ToInt16(Console.ReadLine());
+
+            if (number1 > number2 && number1>number3)
+            {
+                Console.WriteLine(number1 + " is Bigger ");
+            }
+
+            else
+                {
+                if (number2 > number3)
+                {
+                    Console.WriteLine(number2 + " is Bigger ");
+                }
+                else
+                {
+                    Console.WriteLine(number3 + " is Bigger ");
+                }
+
+                }
+            Console.ReadKey();
+        }
