@@ -1,0 +1,16 @@
+int num = Convert.ToInt32(Console.ReadLine());
+           
+            for(int i=num;i<(num+12);i+=2)
+            {
+                if(i % 2 == 0)
+                {
+                    int odd = i + 1;
+                    Console.WriteLine(odd);
+                }
+                else 
+                {
+                    Console.WriteLine(i);
+                }
+            }
+           
+            Console.ReadKey();
