@@ -670,11 +670,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\100-days-of-code\\Data Structure and Algorithm\\DSA\\DSA\\DSA.csproj",
+      "projectUniqueName": "E:\\100-days-of-code\\100DaysOfCode\\Data Structure and Algorithm\\DSA\\DSA\\DSA.csproj",
       "projectName": "DSA",
-      "projectPath": "E:\\100-days-of-code\\Data Structure and Algorithm\\DSA\\DSA\\DSA.csproj",
+      "projectPath": "E:\\100-days-of-code\\100DaysOfCode\\Data Structure and Algorithm\\DSA\\DSA\\DSA.csproj",
       "packagesPath": "C:\\Users\\bmmah\\.nuget\\packages\\",
-      "outputPath": "E:\\100-days-of-code\\Data Structure and Algorithm\\DSA\\DSA\\obj\\",
+      "outputPath": "E:\\100-days-of-code\\100DaysOfCode\\Data Structure and Algorithm\\DSA\\DSA\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

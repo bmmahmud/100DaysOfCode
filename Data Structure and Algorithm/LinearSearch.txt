@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace DSA
-{
-    class LinearSearch
+class LinearSearch
     {
         static void Main(string[] args)
         {
@@ -29,4 +23,3 @@ namespace DSA
             }
         }
     }
-}
