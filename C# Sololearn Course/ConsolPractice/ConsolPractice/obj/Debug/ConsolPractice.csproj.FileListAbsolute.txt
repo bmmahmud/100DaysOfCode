@@ -1,7 +1,0 @@
-E:\COURSE\C# Sololearn Course\ConsolPractice\ConsolPractice\bin\Debug\ConsolPractice.exe.config
-E:\COURSE\C# Sololearn Course\ConsolPractice\ConsolPractice\bin\Debug\ConsolPractice.exe
-E:\COURSE\C# Sololearn Course\ConsolPractice\ConsolPractice\bin\Debug\ConsolPractice.pdb
-E:\COURSE\C# Sololearn Course\ConsolPractice\ConsolPractice\obj\Debug\ConsolPractice.csprojAssemblyReference.cache
-E:\COURSE\C# Sololearn Course\ConsolPractice\ConsolPractice\obj\Debug\ConsolPractice.csproj.CoreCompileInputs.cache
-E:\COURSE\C# Sololearn Course\ConsolPractice\ConsolPractice\obj\Debug\ConsolPractice.exe
-E:\COURSE\C# Sololearn Course\ConsolPractice\ConsolPractice\obj\Debug\ConsolPractice.pdb
