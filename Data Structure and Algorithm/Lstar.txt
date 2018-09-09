@@ -1,0 +1,36 @@
+static void Main(string[] args)
+        {
+            Console.WriteLine("Insert Number of Row:");
+            int row = Convert.ToInt16(Console.ReadLine());
+            for(int rows = 1; rows <= row; rows++)
+            {
+                for(int start = 1; start <= rows; start++)
+                {
+                    Console.Write("* ");
+                }
+                Console.WriteLine("");
+            }
+        }
+*
+* *
+* * *
+* * * *
+* * * * *
+
+// L numner
+Console.WriteLine("Insert Number of Row:");
+            int row = Convert.ToInt16(Console.ReadLine());
+            for(int rows = 1; rows <= row; rows++)
+            {
+                for(int start = 1; start <= rows; start++)
+                {
+                    Console.Write(start+" ");
+                }
+                Console.WriteLine("");
+            }
+
+1
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5
