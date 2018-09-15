@@ -1,0 +1,17 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+namespace Sololearn{
+	class Program{
+		static void Func<T,U>(T a,U b){
+			Console.WriteLine(a+" "+b); }
+		
+		static void Main(string[] args){
+			int a =55;
+			double b = 67.33;
+			Func(a,b);
+		}
+	}
+}
