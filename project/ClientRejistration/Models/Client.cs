@@ -7,6 +7,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using System.ComponentModel;
+
 namespace ClientRejistration.Models
 {
     using System;
@@ -17,6 +19,8 @@ namespace ClientRejistration.Models
         public int ClientID { get; set; }
         public string ClientName { get; set; }
         public string Password { get; set; }
+        //[DisplayName{"Confirm Password"}]
+        public string ConfirmPassword { get; set; }
         public bool IsAdmin { get; set; }
     }
 }
