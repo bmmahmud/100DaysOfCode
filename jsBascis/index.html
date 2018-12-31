@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Fundamental JS</title>
+
+    <script src="jsdemo.js"></script>
+  </head>
+  <body>
+    <script>
+      var name = "Mahmud";
+      var age = 18;
+      document.write(name, " Age:", age);
+      if (age > 20) {
+        document.write(" You are Young.Time to get Married.");
+      } else {
+        document.write(" You are too Young", name, "<br />");
+      }
+      for (var i = 1; i <= 10; i++) {
+        for (var j = 1; j <= i; j++) {
+          document.write("*");
+        }
+        document.write("<br />");
+      }
+      // var name = "Mahmud";
+      // alartF("mahmud \n", 24);
+      var c = add(2, 3);
+      document.write("Addition: ", c);
+      // var user = prompt("Enter Row Number:");
+      // document.write("\n" + user);
+
+      var personObject = {
+        name: " Ash",
+        age: 31,
+        favColor: "Green",
+        height: 123
+      };
+      //   var x = personObject.name;
+      //   document.write("<br> " + x);
+      //   var course = new Array("Html", "CSS", "JS");
+      //   var x=course[0];
+      //   document.write(x);
+    </script>
+  </body>
+</html>
