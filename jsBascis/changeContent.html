@@ -7,6 +7,40 @@
     <title>Document</title>
   </head>
   <body>
-    <h1></h1>
+    <h1 align="center">Header1</h1>
+    <h1 align="center">Header2</h1>
+    <h1 align="center">Header3</h1>
+    <h1 align="center">Header4</h1>
+    <h1 align="center">Header5</h1>
+    <script>
+      //make an array with the header
+      var myArray = document.getElementsByTagName("h1");
+      //--one variable to be displayed in the
+      //headers, and one for counting the array intex(X)
+
+      var myNumber = 0;
+      var x = 0;
+      //the function that steps through the headers and
+      // increases the numbers, one at a time
+
+      function count() {
+        //starting with zero in the first header
+        myArray[x].innerHTML = myNumber;
+
+        x++;
+        myNumber++;
+
+        // after all headers (indexes) have been stepped through, start over with the first header
+        if (x == myArray.length) {
+          x = 0;
+        }
+      } // end of function
+      // call the function every 1 second
+      //(This is the part which Nikita Shamardak
+      //refers to in the comments, and it now looks the way it should!)
+      setInterval(count, 1000);
+
+      // Main Sour https://code.sololearn.com/WI4UX8t4eawV/#html
+    </script>
   </body>
 </html>

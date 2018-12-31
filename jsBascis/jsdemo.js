@@ -22,12 +22,14 @@ function person(name, age) {
 // alert("The square root of " + n + " is " + answer);
 
 //Time
-function printTime() {
-  var d = new Date();
-  var hours = d.getHours();
-  var min = d.getMinutes();
-  var date = d.getDate();
-  var sec = d.getSeconds();
-  document.body.innerHTML = hours + ": " + min + ": " + sec;
-}
-setInterval(printTime, 1000);
+// function printTime() {
+//   var d = new Date();
+//   var hours = d.getHours();
+//   var min = d.getMinutes();
+//   var date = d.getDate();
+//   var sec = d.getSeconds();
+//   document.body.innerHTML = hours + ": " + min + ": " + sec;
+// }
+// setInterval(printTime, 1000);
+
+//DOM
