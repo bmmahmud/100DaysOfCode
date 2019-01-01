@@ -5,12 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Fundamental JS</title>
-
+    <style>
+      #container {
+        width: 600px;
+        height: 200px;
+        background: green;
+        position: relative;
+      }
+      #box {
+        width: 50px;
+        height: 50px;
+        background: red;
+        position: absolute;
+      }
+    </style>
     <script src="jsdemo.js"></script>
   </head>
   <body>
-    <p>Hi</p>
-    <p>I am mahmud</p>
+    
 
     <script>
       // var name = "Mahmud";
@@ -45,10 +57,51 @@
       //   var course = new Array("Html", "CSS", "JS");
       //   var x=course[0];
       //   document.write(x);
+
+      
       var arr = document.getElementsByTagName("p");
       for (var x = 0; x < arr.length; x++) {
         arr[x].innerHTML = "I am Ash";
       }
+     //box animation
+      window.onload = function(){
+        var pos = 0;
+
+        var box = document.getElementById('box');
+        var t=setInterval(move,10);
+
+        function move(){
+          if(pos>=550){
+            clearInterval(t);
+          }
+          else{
+            pos+=1;
+            box.style.left = pos+'px';
+          }
+        }
+        //End Box Function
+        //Event handler Here
+        var x = document.getElementById('demo1');
+        x.onclick = function(){
+          document.body.innerHTML=Date();
+        }
+
+        // input Uppercase
+        function change() {
+    var x2 = document.getElementById('name');
+    x2.value = x2.value.toUpperCase();
+}
+      }
     </script>
+    <div id="container">
+      <div id="box"> </div>
+      </div>
+    </div>
+  <div>
+    <button id="demo1">Click Me</button>
+  </div>
+  
+    <input type="text" id="name" onchange="change()">
+ 
   </body>
 </html>
