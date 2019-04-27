@@ -10,4 +10,27 @@ SELECT SUM(population) from City where COUNTRYCODE ="JPN";
 /* Population Density Difference */
 SELECT max(population)-min(population) from City;
 
+/* The Blunder 
+here, CEIL = This function returns the smallest integer greater than, or equal to, the specified numeric expression.
+calculation = actual - miscalculation
+here space is actuall 0 ,that why we replace ) with space cheracter 
+*/
+
+SELECT CEIL(AVG(Salary)-AVG(REPLACE(Salary,'0',''))) FROM EMPLOYEES;
+
+/* Asian Population: here are two table  */
+
+SELECT SUM(CITY.POPULATION) 
+FROM CITY,COUNTRY
+WHERE CITY.COUNTRYCODE = COUNTRY.CODE AND COUNTRY.CONTINENT = 'Asia';
+
+
+
+
+
+
+
+
+
+
 
