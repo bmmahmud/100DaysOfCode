@@ -24,8 +24,9 @@ SELECT SUM(CITY.POPULATION)
 FROM CITY,COUNTRY
 WHERE CITY.COUNTRYCODE = COUNTRY.CODE AND COUNTRY.CONTINENT = 'Asia';
 
-
-
+/* Weather Observation Station 2 */
+select ROUND(sum(LAT_N),2) as lat,
+ROUND (sum(LONG_W),2) as lon from STATION; 
 
 
 
