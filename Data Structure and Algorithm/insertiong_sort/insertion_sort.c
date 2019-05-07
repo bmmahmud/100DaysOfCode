@@ -22,6 +22,7 @@ for(i=0;i<n;i++){
     array[j+1]=item;
 }
 // Print sorted list
+printf("First Bigger number : %d ",array[0]);
 printf("Sorted inters: ");
 for(i=0;i<n;i++){
     printf(" %d ",array[i]);
