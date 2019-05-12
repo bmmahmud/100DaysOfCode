@@ -28,11 +28,13 @@ WHERE CITY.COUNTRYCODE = COUNTRY.CODE AND COUNTRY.CONTINENT = 'Asia';
 select ROUND(sum(LAT_N),2) as lat,
 ROUND (sum(LONG_W),2) as lon from STATION; 
 
-/* Weather Observation Station 13 */
+/* Weather Observation Station 13| 
+BETWEEN return only 1 or 0...that's why we can't use it here */
 
 Select ROUND(sum(LAT_N),4)
-from STATION where LAT_N between(38.7800 AND 137.2345);
+from STATION where LAT_N >38.7800 AND LAT_N <137.2345;
 
+/* Weather Observation Station 14 */
 
 
 
