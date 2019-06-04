@@ -11,9 +11,9 @@ for(i=0;i<n;i++){
 }
 cout<<"All the elements Are: ";
 for(i=0;i<n;i++){
-    cout<<A[i];
+    cout<<A[i]<<" ";
 }
-cout<<"Find location of the Element: ";
+cout<<"\n Find location of the Element: ";
 cin>>x;
 result = linear_search(A,n,x);
 if(result== -1){

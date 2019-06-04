@@ -1,0 +1,35 @@
+/* Functions in C */
+
+#include <stdio.h>
+
+int max_of_four(int a, int b, int c, int d);
+
+max_of_four(int a, int b, int c, int d){
+int array[4]={a,b,c,d};
+int i,j,temp,n=4;
+
+// Bubble sort
+for(i=0;i<=n;i++){
+    for(j=0;j<n-i-1;j++){
+        if(array[j]<array[j+1]){
+            temp=array[j];
+            array[j]=array[j+1];
+            array[j+1]=temp;
+        }
+    }
+}
+return array[0];
+
+}
+
+
+
+int main() {
+    int a, b, c, d;
+    scanf("%d %d %d %d", &a, &b, &c, &d);
+    int ans = max_of_four(a, b, c, d);
+    printf("%d", ans);
+
+    return 0;
+}
+
