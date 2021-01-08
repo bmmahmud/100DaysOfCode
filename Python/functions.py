@@ -12,10 +12,10 @@
 # NameF("ashik")
 
 ####### Using Asterisks
-def NameF(*names):
-    for name in names:
-        print("Hello, "+name+". Good Morning") 
-NameF("ashik","lamia","abir")
+# def NameF(*names):
+#     for name in names:
+#         print("Hello, "+name+". Good Morning") 
+# NameF("ashik","lamia","abir")
 
 ####### Recursion
 # def factorial(x):
@@ -29,3 +29,22 @@ NameF("ashik","lamia","abir")
 # my_list = [1, 5, 4, 6, 8, 11, 3, 12]
 # new_list = list(map(lambda x: x * 2 , my_list))
 # print(new_list)
+
+#### Global Variable
+# x = "global"
+# def foo():
+#     print("x inside:",x)
+# foo()
+# print("x outside:",x)
+
+## Gloabl Keyword
+c = 0
+
+def add():
+    global c
+    c = c+2
+    print("Inside add():",c)
+
+add()
+print("In main:",c)    
+
