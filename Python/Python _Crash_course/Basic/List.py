@@ -3,7 +3,7 @@
 
 
 # item = ["apple","banana","grave",'mango']
-# # print(item[-2].upper())
+# print(item[-4].upper())
 
 # #assignment
 # print('my favourite frout is '+item[0].title())
@@ -42,17 +42,35 @@
 # items.remove('New Apple')
 # print(items)
 
-## Assisnment 3.4
-print("Invite 3 people for Dinner.\n Enter name:")
+# ## Assisnment 3.4 and 3.5
+print("Lis t of Invited 3 people for Dinner:")
 names = []
-names.append('Ashik')
-names.append('Abir')
-names.append('Lamia')
+names.append('ashik')
+names.append('abir')
+names.append('lamia')
 invitation = 'You are Invited in my Dinner.'
-print(names[0],",\n",invitation)
-print(names[1],",\n",invitation)
-print(names[2],",\n",invitation)
-print(names[1],',\n Is Unable to attend the party.')
-names[1]='Emma'
-print(names[1],",\n",invitation)
+print(names[0].title(),",\n",invitation)
+print(names[1].title(),",\n",invitation)
+print(names[2].title(),",\n",invitation)
+popped = names.pop(1)
+names.append('Emma')
+print(popped.title(),',\n Is Unable to attend the party.')
+print(names[2].title(),",\n",invitation)
 print('Lists of all Members:',names)
+names.insert(0,'Lola')
+names.insert(2,'Chichi')
+names.append('fife')
+print(names)
+
+# ## Removie By POP
+# motorcycles = ['honda','yamaha','suzuki']
+# print(motorcycles)
+
+# last item
+# popped_motorcycle = motorcycles.pop()
+# print(motorcycles)
+# print(popped_motorcycle)
+
+# remove specific item
+# first_owned = motorcycles.pop(0)
+# print('The first motorcycle I owned as a '+ first_owned.title() +'.') 

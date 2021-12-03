@@ -1,4 +1,5 @@
+## Exercise 2.1 and 2.2
 message = "Hi,I am first message"
 print(message)
-message = "Hi, i am second Message"
+message = "I live in Bangladesh." 
 print(message)
