@@ -1,0 +1,12 @@
+## B M ASHIK MAHMUD 04/12/2021
+# LEEDCODE - TWO SUM
+
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        for i in range(len(nums)):
+            numberTofind = target - nums[i]
+            for j in range(i+1,len(nums)):
+                if numberTofind == nums[j]:
+                    return [i,j]
+                
+        
