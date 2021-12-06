@@ -1,15 +1,28 @@
 # leedCode : 9 Palindrome Number [05/12/2021]
 
-number = -121
-
-reverse = 0
-while(number >0):
-    reminder = number % 10
-    reverse = reverse * 10 + reminder
-    number = number // 10
-if number == reverse:
-    print("\nReverse Number: {0}".format(reverse))
+# class Solution:
+#     def isPalindrome(self, x: int) -> bool:
+#         # return (str(x)[::-1] == str(x))
+#         reverse = 0
+#         if x < 0:
+#             return False
+#         reminder = x % 10
+#         reverse = reverse * 10 + reminder
+#         x = x//10
+#         return reverse
+x = 121
+if x < 0:
+    print("XFalse")
 else:
-    print("Not Same")   
-print("\nReverse Number: {0}".format(reverse))         
+    reverse = 0
+    y = x
+    while(x > 0):
+        reminder = x % 10
+        reverse = reverse * 10 + reminder
+        x = x//10
+    print(reverse)
+    if reverse == x or x == reverse: 
+        print("True",reverse,x)
+    else:
+        print('False',reverse,x)    
 
