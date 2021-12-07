@@ -37,5 +37,26 @@ cars = ['audi','bmw','subaru','toyota']
 # else:
 #     print("Best of luck")  
 
-if 'bmw' in cars:
-    print('cars list have BMW')  
+# if 'bmw' in cars:
+#     print('cars list have BMW')  
+
+# # Assignment 5-3
+# alien_color = ['green','yello','red']
+
+# # if 'red' in alien_color:
+# #     print("Player just earned 5 points!!")
+# for color in alien_color:
+#     print("Adding "+ color +"." )
+# print("\nFinish Adding")    
+
+
+## Multiple List - Pizza Topping
+available_toppigs = ['mushrooms','olives','green pappers','pepperoni','pineapple','extra cheese']
+requested_topping = ['mushrooms','french fries','extra cheese']
+
+for requested_topping in requested_topping:
+    if requested_topping in available_toppigs:
+        print("Adding "+ requested_topping+".")
+    else:
+        print("Sorry, We don't have "+requested_topping +".")
+print("\nFinished making your pizza!")            
