@@ -55,6 +55,30 @@ birthDate = {'Abir':11,'Lamia':8,'Ashik':8,'Rasel':24,'Shila':16,'Mim':17}
 # for age in birthDate.values():
 #     print(age)
 ## WithOut repeatation 
-for age in set(birthDate.values()):
-    print(age)
+# for age in set(birthDate.values()):
+#     print(age)
 
+
+### Nested Dic
+
+aliens = []
+# make 15 green aliens
+for alien_number in range(0,5):
+    new_alien = {'color':'green','points':5,'speed':'slow'}
+    aliens.append(new_alien)
+# for alien in aliens[0:3]:
+#     if alien['color'] == 'green':
+#         alien['color'] = 'yellow'
+#         alien['points'] = 10
+#         alien['speed'] = 'medium'
+# for alien in aliens[6:10]:        
+#     if  alien['color'] == 'green':
+#         alien['color'] = 'red'
+#         alien['points'] = 15
+#         alien['speed'] = 'Fast'    
+# show the firs         
+for alien in aliens[0:5]:
+    print(aliens)
+print('........')
+
+# upto page 111
