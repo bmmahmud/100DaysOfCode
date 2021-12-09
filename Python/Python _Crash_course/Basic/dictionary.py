@@ -62,10 +62,10 @@ birthDate = {'Abir':11,'Lamia':8,'Ashik':8,'Rasel':24,'Shila':16,'Mim':17}
 ### Nested Dic
 
 aliens = []
-# make 15 green aliens
-for alien_number in range(0,5):
-    new_alien = {'color':'green','points':5,'speed':'slow'}
-    aliens.append(new_alien)
+## make 15 green aliens
+# for alien_number in range(0,5):
+#     new_alien = {'color':'green','points':5,'speed':'slow'}
+#     aliens.append(new_alien)
 # for alien in aliens[0:3]:
 #     if alien['color'] == 'green':
 #         alien['color'] = 'yellow'
@@ -77,8 +77,43 @@ for alien_number in range(0,5):
 #         alien['points'] = 15
 #         alien['speed'] = 'Fast'    
 # show the firs         
-for alien in aliens[0:5]:
-    print(aliens)
-print('........')
+# for alien in aliens[0:5]:
+#     print(aliens)
+# print('........')
 
 # upto page 111
+
+###### A List in a Dictionary
+# pizza = {
+#     'crust' : 'thick',
+#     'toppings': ['mushrooms','extra cheese']
+# }
+
+# print("You ordered a "+pizza['crust'] +'-crust pizza ' +
+#         'with the following toppings:')
+# for topping in pizza['toppings']:
+#     print('\t' + topping) 
+# 
+# 
+# ###### Dictionary in Dictionary
+users = {
+    'aniskhan':{
+        'first': 'MD Anis',
+        'last' : 'khan',
+        'location' : 'Mirpur'
+    },
+    'upol':{
+        'first': 'Utpal',
+        'last' : 'Kumar',
+        'location' : 'Uttora'
+    }
+}
+
+for username, user_info in users.items():
+    print("\nUsername: "+ username)
+    full_name = user_info['first'] + " " + user_info['last']
+    location = user_info['location']
+
+    print("\tFull Name: " + full_name.title())
+    print("\tLocation: " + location.title())
+
