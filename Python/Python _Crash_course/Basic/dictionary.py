@@ -119,11 +119,9 @@ users = {
 
 ##### Assignment : 6-7
 people = [
-    person_1 = {'name':'Ashik','age':28,'location':'Mirpur','zipcode':1216},
-    person_2 = {'name':'Ashik','age':28,'location':'Mirpur','zipcode':1216},
-    person_3 = {'name':'Ashik','age':28,'location':'Mirpur','zipcode':1216}
+    {'name':'Abir','age':21,'education':'BBA','zipcode':1216},
+    {'name':'Ashik','age':27,'education':'CSE','zipcode':1216},
+    {'name':'Lamia','age':16,'education':'Science','zipcode':1216}
 ]
 for person in people:
-    
-
-
+    print("Name: "+person['name']+"\nAge: "+str(person['age'])+"\nEducation: "+person['education']+"\nZipCode:"+str(person['zipcode']),'\n--------------')
