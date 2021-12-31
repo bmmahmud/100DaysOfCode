@@ -37,7 +37,34 @@
 
 
 ### Assignment 8-3
-def make_shirt(size,text="I love Python"):
-    print("The Shirt Size is "+size+".")
-    print("Shirt Text on it "+text)
-make_shirt(size='M')
+# def make_shirt(size,text="I love Python"):
+#     print("The Shirt Size is "+size+".")
+#     print("Shirt Text on it "+text)
+# make_shirt(size='M')
+
+#### Return Value
+# def get_formatted_name(first_name, last_name):
+#     """"Return a full name, neatly formatted."""
+#     full_name = first_name + " " + last_name
+#     return full_name.title()
+# person_name = get_formatted_name('ashik','mahmud')
+# print(person_name)  
+
+
+### optional argument
+# def get_formatted_name(first_name,last_name,middle_name=''):
+#     if middle_name:
+#         full_name = first_name.upper() + " " + middle_name.title() + " " + last_name.title()
+#     else:
+#         full_name = first_name.upper() + " " + last_name.title()  
+#     return full_name
+# person = get_formatted_name('bm','mahmud','ashik')    
+# print(person)          
+
+### Dictionary return
+def build_person(first_name, last_name,age = ''):
+    person = {'first':first_name,'last':last_name}
+    if age:
+        person['age'] = age
+    return person
+         
