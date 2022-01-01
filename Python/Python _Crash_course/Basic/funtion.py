@@ -67,4 +67,5 @@ def build_person(first_name, last_name,age = ''):
     if age:
         person['age'] = age
     return person
-         
+musician = build_person('jimi','mahmd',age=26)
+print(musician)         
