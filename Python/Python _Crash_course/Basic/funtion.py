@@ -62,10 +62,30 @@
 # print(person)          
 
 ### Dictionary return
-def build_person(first_name, last_name,age = ''):
-    person = {'first':first_name,'last':last_name}
-    if age:
-        person['age'] = age
-    return person
-musician = build_person('jimi','mahmd',age=26)
-print(musician)         
+# def build_person(first_name, last_name,age = ''):
+#     person = {'first':first_name,'last':last_name}
+#     if age:
+#         person['age'] = age
+#     return person
+# musician = build_person('jimi','mahmd',age=26)
+# print(musician)    
+
+### Function with while loop
+def get_formatted_name(first_name, last_name):
+    """"Return a full name, neatly formatted."""
+    full_name = first_name + " " + last_name
+    return full_name.title()
+# This is an infinite loop!
+
+while True:
+    print("\n Please tell me your name:")
+    print("(Enter 'q' at any time to quit)")
+    f_name = input("First Name: ")
+    if f_name == 'q':
+        break
+    l_name = input("Last Name: ")
+    if l_name == 'q':
+        break
+    formatted_name = get_formatted_name(f_name, l_name)
+    print("\nHello, "+ formatted_name + "!")
+        
