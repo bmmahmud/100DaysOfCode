@@ -71,21 +71,75 @@
 # print(musician)    
 
 ### Function with while loop
-def get_formatted_name(first_name, last_name):
-    """"Return a full name, neatly formatted."""
-    full_name = first_name + " " + last_name
-    return full_name.title()
-# This is an infinite loop!
+# def get_formatted_name(first_name, last_name):
+#     """"Return a full name, neatly formatted."""
+#     full_name = first_name + " " + last_name
+#     return full_name.title()
+# # This is an infinite loop!
 
-while True:
-    print("\n Please tell me your name:")
-    print("(Enter 'q' at any time to quit)")
-    f_name = input("First Name: ")
-    if f_name == 'q':
-        break
-    l_name = input("Last Name: ")
-    if l_name == 'q':
-        break
-    formatted_name = get_formatted_name(f_name, l_name)
-    print("\nHello, "+ formatted_name + "!")
+# while True:
+#     print("\n Please tell me your name:")
+#     print("(Enter 'q' at any time to quit)")
+#     f_name = input("First Name: ")
+#     if f_name == 'q':
+#         break
+#     l_name = input("Last Name: ")
+#     if l_name == 'q':
+#         break
+#     formatted_name = get_formatted_name(f_name, l_name)
+#     print("\nHello, "+ formatted_name + "!")
+
+#### Assignment 8-6
+# def city_country(fname,lname):
+#     full_name = fname +", "+lname
+#     return full_name.title()
+
+# name = city_country('samtiago','chile')  
+# print(name)  
+
+
+
+### Passign List in funtion
+# def greet_users(users):
+#     for name in users:
+#         msg = "Hello, " + name.title() + "!"
+#         print(msg)
+# username = ['ashik','abir','lamia']
+# greet_users(username)  
+
+
+
+# #### Modifying a list
+## move completed design
+# def printed_model(unprinted_designs,completed_models):
+#     while unprinted_designs:
+#         current_design = unprinted_designs.pop()
+#         print("Printing model: "+ current_design)
+#         completed_models.append(current_design) # store in a new list
+# def show_completed_models(completed_models):
+#     print("\nThe following models havve been printed:")
+#     for completed_model in completed_models:
+#         print(completed_model)
+# #declareing list 
+# unprinted_designs = ['iphone case','robot pendant','dodecahedron']
+# completed_models = []  
+
+# #call function
+# printed_model(unprinted_designs[:],completed_models) # paasing a copy of the list by slice
+# show_completed_models(completed_models)
+
+### Assignment 8-9, 8-10
+# def make_great(names):
+#     for i in range(len(names)):
+#         names[i] = "Great "+names[i]
+    
+# def show_magicians(names):
+#     for name in names:
+#         print(name.title())
+
+# magicians_name = ['ashik','abir','lamia']
+# make_great(magicians_name)
+# show_magicians(magicians_name)
+
+
         
