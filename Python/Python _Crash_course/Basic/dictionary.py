@@ -96,18 +96,18 @@ aliens = []
 # 
 # 
 # ###### Dictionary in Dictionary
-users = {
-    'aniskhan':{
-        'first': 'MD Anis',
-        'last' : 'khan',
-        'location' : 'Mirpur'
-    },
-    'upol':{
-        'first': 'Utpal',
-        'last' : 'Kumar',
-        'location' : 'Uttora'
-    }
-}
+# users = {
+#     'aniskhan':{
+#         'first': 'MD Anis',
+#         'last' : 'khan',
+#         'location' : 'Mirpur'
+#     },
+#     'upol':{
+#         'first': 'Utpal',
+#         'last' : 'Kumar',
+#         'location' : 'Uttora'
+#     }
+# }
 
 # for username, user_info in users.items():
 #     print("\nUsername: "+ username)
@@ -118,10 +118,10 @@ users = {
 #     print("\tLocation: " + location.title())
 
 ##### Assignment : 6-7
-people = [
-    {'name':'Abir','age':21,'education':'BBA','zipcode':1216},
-    {'name':'Ashik','age':27,'education':'CSE','zipcode':1216},
-    {'name':'Lamia','age':16,'education':'Science','zipcode':1216}
-]
-for person in people:
-    print("Name: "+person['name']+"\nAge: "+str(person['age'])+"\nEducation: "+person['education']+"\nZipCode:"+str(person['zipcode']),'\n--------------')
+# people = [
+#     {'name':'Abir','age':21,'education':'BBA','zipcode':1216},
+#     {'name':'Ashik','age':27,'education':'CSE','zipcode':1216},
+#     {'name':'Lamia','age':16,'education':'Science','zipcode':1216}
+# ]
+# for person in people:
+#     print("Name: "+person['name']+"\nAge: "+str(person['age'])+"\nEducation: "+person['education']+"\nZipCode:"+str(person['zipcode']),'\n--------------')
