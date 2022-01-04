@@ -202,3 +202,5 @@ from pizza import make_pizza as mp
 
 ### Call all function
 # from pizza import * 
+
+# end of Function chapter 05-01-2022
