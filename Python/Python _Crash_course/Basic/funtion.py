@@ -141,5 +141,22 @@
 # make_great(magicians_name)
 # show_magicians(magicians_name)
 
+### Passing an arbitrary number of arguments
+# def make_pizza(size,*toppings):
+#     # print("\nMaking a pizza with the following toppings:")
+#     print("\nMaking a " + str(size)+ "-inch pizza with the following toppings:") 
+#     for topping in toppings:
+#         print("- "+ topping)
+# make_pizza(3,'pepperoni')
+# make_pizza(6,'mashrooms','green peppers','extra cheese')
 
-        
+### Dictionary as argument
+def build_profile(first, last,**user_info):
+    profile = {}
+    profile['first_name'] = first
+    profile['last_name'] = last
+    for key, value in user_info.items():
+        profile[key] = value   
+    return profile
+user_profile = build_profile('albert','einstein',locals='princeton',first='physics') 
+print(user_profile)            
