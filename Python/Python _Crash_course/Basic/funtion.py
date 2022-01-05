@@ -151,12 +151,54 @@
 # make_pizza(6,'mashrooms','green peppers','extra cheese')
 
 ### Dictionary as argument
-def build_profile(first, last,**user_info):
-    profile = {}
-    profile['first_name'] = first
-    profile['last_name'] = last
-    for key, value in user_info.items():
-        profile[key] = value   
-    return profile
-user_profile = build_profile('albert','einstein',locals='princeton',first='physics') 
-print(user_profile)            
+# def build_profile(first, last,**user_info):
+#     profile = {}
+#     profile['first_name'] = first
+#     profile['last_name'] = last
+#     for key, value in user_info.items():
+#         profile[key] = value   
+#     return profile
+# user_profile = build_profile('albert','einstein',locals='princeton',field='physics',age='24') 
+# print(user_profile)            
+
+### Assignment 8-12
+# def make_sandwiches(*items):
+#     print("\nFolloing items are begin added to Sandwiches:")
+#     for item in items:
+#         print("- "+item.title())
+# make_sandwiches('tomato')
+# make_sandwiches('fish','meat','salad')
+
+#### Assignment 8-13 
+# def build_profile(first, last,**user_info):
+#     profile = {}
+#     profile['first_name'] = first
+#     profile['last_name'] = last
+#     for key, value in user_info.items():
+#         profile[key] = value   
+#     return profile
+# user_profile = build_profile('ashik','mahmud',locals='mirpur',field='CSE',age='27') 
+# # print(user_profile) 
+# profile = ['First Name','Last Name','Home Location','Bachelor Field','Age']
+# for key, value in user_profile.items():
+#         for title in profile:
+#             print(title+": "+value)
+
+### Work with another file by import
+# import pizza
+# make_pizza(16,'pepperoni')
+# pizza.make_pizza(12,'mushrooms','green peppers','extra cheese')
+
+# calling specific function from a module
+from pizza import make_pizza 
+make_pizza(16,'pepperoni')
+make_pizza(12,'mushrooms','green peppers','extra cheese')
+
+### Using as to Give a Function an Alias
+from pizza import make_pizza as mp
+
+mp(16,'pepperoni')
+mp(12,'mushrooms','green peppers','extra cheese')
+
+### Call all function
+# from pizza import * 
