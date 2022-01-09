@@ -5,7 +5,7 @@ menue = { 1:{"item":"coffe","price":350},
 4:{"item":"lasagna","price":220}
 }
 
-# print(menue[1]['item'])
+print(menue[1]['item'])
 
-for item,value in menue.items():
-        print(item,": Item: ",value["item"].title(),"- Price:"+str(value["price"])) 
+# for item,value in menue.items():
+#         print(item,": Item: ",value["item"].title(),"- Price:"+str(value["price"])+"Tk") 
