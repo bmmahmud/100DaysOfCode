@@ -10,7 +10,7 @@ def order_items():
     order_items.total_price = 0
     x = True
     while x:
-        items = input("Enter Item Name:")
+        items = input("Enter Item No:")
         x = items
         if (items in orders):
             print("Already ordered!!! Try Somthing New")
