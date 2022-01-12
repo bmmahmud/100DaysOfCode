@@ -15,33 +15,38 @@ def numeric_validation(value):
             break
     return val
 
+# convert into interger
+def convert_numeric(value):
+    if value in range(1,100):
+        val = int(value)
+        return val
 #show menu card
 def show_manue(menue):
     for item,value in menue.items():
         print("No#",item,": Item: ",value["item"].title(),"- Price:"+str(value["price"])+"Tk")
 
 # Add Order items
-def order_items():
+def order_items(orders):
     order_items.total_price = 0
-    x = True
-    while x:
+    run = True
+    while run:
+        orderList = orders
         items = numeric_validation("Enter Item No:")
-        x = items
-        if (items in orders):
+        if (items in orderList):
             print("Already ordered!!! Try Somthing New")
             continue
         else:
-            if x == 'done':
-                x = False
-            else:  
-                items_no = int(items)
-                qty = numeric_validation("Quantity:")  
-                # numeric_validation
-                print("Order More or Type -> done")
-                order_items.total_price += (menue[items_no]['price'] * qty)
-                orders.append(menue[items_no]['item'])
-                # orders['item'] += menue[items_no]['item']
-                # orders['item']['qty'] = qty
+            items_no = int(items)
+            qty = numeric_validation("Quantity:")  
+            order_items.total_price += (menue[items_no]['price'] * qty)
+            orderList.append(menue[items_no]['item'])
+            order = input("Do you want to order more? y/n:")
+            if order == 'y':
+                continue
+            else:
+                run = False
+    return order_items           
+                
 
 # Show Card
 def show_cart(orders):
@@ -69,7 +74,7 @@ show_manue(menue)
 print('#'*30)
 
 # Add item 
-order_items()
+order_items(orders)
 print('#'*30)
 
 # Show card list
