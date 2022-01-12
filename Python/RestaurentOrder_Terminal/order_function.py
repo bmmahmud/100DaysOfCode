@@ -1,5 +1,20 @@
 #### Restaurent Order System using Function
 
+# check input numeric validation
+def numeric_validation(value):
+    while True:
+        try:
+            val = int(input(value))
+        except:
+            print('Please use numeric digits.')
+            continue
+        if val < 0:
+            print('Please enter a positive number.')
+            continue
+        else:
+            break
+    return val
+
 #show menu card
 def show_manue(menue):
     for item,value in menue.items():
@@ -10,7 +25,7 @@ def order_items():
     order_items.total_price = 0
     x = True
     while x:
-        items = input("Enter Item No:")
+        items = numeric_validation("Enter Item No:")
         x = items
         if (items in orders):
             print("Already ordered!!! Try Somthing New")
@@ -20,7 +35,8 @@ def order_items():
                 x = False
             else:  
                 items_no = int(items)
-                qty = int(input("Quantity:"))  # issue: if type  done show error, need to find solution
+                qty = numeric_validation("Quantity:")  
+                # numeric_validation
                 print("Order More or Type -> done")
                 order_items.total_price += (menue[items_no]['price'] * qty)
                 orders.append(menue[items_no]['item'])

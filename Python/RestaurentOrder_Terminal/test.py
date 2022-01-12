@@ -1,16 +1,15 @@
-def input_validation(value):
+def numeric_validation(value):
     while True:
-        val = value
         try:
-            val = int(val)
-            return val
+            val = int(input(value))
         except:
             print('Please use numeric digits.')
             continue
-        if val < 1:
+        if val < 0:
             print('Please enter a positive number.')
             continue
-        break
-value = input('Enter Item Name:')
-x = input_validation(value)
+        else:
+            break
+    return val
+x = numeric_validation('Enter Item Name:')
 print(f'Your age is {x}.')
