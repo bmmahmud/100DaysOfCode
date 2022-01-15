@@ -8,9 +8,10 @@ The system is developed using python. Main goal is to implement the python basic
 Leaning and implementing new feaures in this samll project is my mission.
 
 ## Future Plan
-- handel error
+- handel error ( input data valid solved)
 - handel Quantity input value error.
 - show order items price in show card.
+- store one item and check to stop repeat same item.
 
 ## Sample Output
 ![](img/output.PNG)
