@@ -2,6 +2,10 @@
 
 # check input numeric validation
 def numeric_validation(value):
+    """"
+    This function take an input as interger
+    and validate that it takes onlu numeric data. 
+    """
     while True:
         try:
             val = int(input(value))
@@ -14,16 +18,6 @@ def numeric_validation(value):
         else:
             break
     return val
-
-# convert into interger
-def convert_numeric(value):
-    if value in range(1,100):
-        val = int(value)
-        return val
-#show menu card
-def show_manue(menue):
-    for item,value in menue.items():
-        print("No#",item,": Item: ",value["item"].title(),"- Price:"+str(value["price"])+"Tk")
 
 # Add Order items
 def order_items(orders):
@@ -48,13 +42,6 @@ def order_items(orders):
     return order_items           
                 
 
-# Show Card
-def show_cart(orders):
-    print("You order the follwing Items: ")
-    for i in range(len(orders)):
-        print(str(i+1)+"- "+orders[i].title())
-    print("-"*30+"\nYour Total Price: "+str(order_items.total_price)+"Tk")
-
 ## Start main function
 print("#"*30+"\n    Welcome To Hacker Caffe\n"+"#"*30+ \
 "\nPlease Chose your Order Number:")
@@ -70,7 +57,8 @@ orders = [] # issue it has to be a dictionary not a list
 qty= 1
 
 # Show menue
-show_manue(menue)
+for item,value in menue.items():
+    print("No#",item,": Item: ",value["item"].title(),"- Price:"+str(value["price"])+"Tk")
 print('#'*30)
 
 # Add item 
@@ -78,7 +66,10 @@ order_items(orders)
 print('#'*30)
 
 # Show card list
-show_cart(orders)
+print("You order the follwing Items: ")
+for i in range(len(orders)):
+    print(str(i+1)+"- "+orders[i].title())
+print("-"*30+"\nYour Total Price: "+str(order_items.total_price)+"Tk")
 
 #End    
 print('#'*30+"\nThanks! Order Again.\n") 
