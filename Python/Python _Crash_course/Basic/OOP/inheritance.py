@@ -1,4 +1,7 @@
 ### Chapter 9: Section Inheritance | 19-01-2022
+from cgi import test
+
+
 class Car():
     def __init__(self,make,model,year):
         """"Initialize attributes to describe a car."""
@@ -22,6 +25,9 @@ class Car():
             print("You can't roll back an odometer!")
     def increment_odometer(self,miles):
         self.odometer_reading += miles
+    def fill_gas_tank(self):
+        """"Over ride parent class by create same name function in childclass"""
+        print("from Parent class!")    
 class ElectronicCar(Car):
     """"Represent aspects of a car, specific to electronic vehicles."""
     def __init__(self, make, model, year):
@@ -30,8 +36,13 @@ class ElectronicCar(Car):
     def describe_battery(self):
         """"Describe"""
         print("This car has a "+str(self.bettery_size)+ " -kWh battery.")        
+    # Overriding Methods
+    def fill_gas_tank(self):
+        """"Over ride parent class by create same name function in childclass"""
+        print("This car doesn't need a gas tank!")
 
 # creating instance
 my_tesla = ElectronicCar('tesla','model S',2016)
 print(my_tesla.get_descriptive_name())
 my_tesla.describe_battery()
+my_tesla.fill_gas_tank()
