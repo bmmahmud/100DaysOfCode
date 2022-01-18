@@ -28,9 +28,9 @@
 # print(f'Your age is {x}.')
 
 ## if numeric then go
-myVariable = input('Enter a number')
-if myVariable in range(1,100):
-    # Do something
-    print(myVariable)
-else:
-    print('The variable is not a number')
+# myVariable = input('Enter a number')
+# if myVariable in range(1,100):
+#     # Do something
+#     print(myVariable)
+# else:
+#     print('The variable is not a number')

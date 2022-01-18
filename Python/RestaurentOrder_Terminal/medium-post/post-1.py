@@ -7,9 +7,6 @@ menue = {"coffe":350,
 "meatloaf":150,
 "lasagna":220
 }
-total_price = 0
-orders = []
-qty= 1
 
 # Show Menue Card
 for item,price in menue.items():
@@ -18,20 +15,21 @@ print('#'*30)
 
 # Add items
 x = True
+total_price = 0
+orders = []
 while x:
     items = input("Enter Item Name:")
     print("Order More or Type: done")
     x = items
+
     if x == 'done':
         x = False
-    else:  
-        # qty = int(input("Quantity:"))  
-        total_price += (menue[items] * qty)
+    else: 
+        total_price += (menue[items])
         orders.append(items)    
 print('#'*30)
 
 # Show Card
-
 print("You order the follwing Items: ")
 for i in range(len(orders)):
     print(str(i+1)+" - "+orders[i].title() +" - "+str(menue[orders[i]]))
