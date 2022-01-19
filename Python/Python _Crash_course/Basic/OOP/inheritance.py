@@ -1,5 +1,4 @@
 ### Chapter 9: Section Inheritance | 19-01-2022
-from cgi import test
 
 
 class Car():
