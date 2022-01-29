@@ -1,0 +1,3 @@
+In python you can read files.
+In python you can search values by reading a file.
+In python you can check data by reading a file.
