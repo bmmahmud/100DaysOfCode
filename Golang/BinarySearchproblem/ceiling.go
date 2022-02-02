@@ -35,7 +35,7 @@ func main() {
 	// Create an exmaple array and target
 	// array := []int{9, 7, 5, 3, 1}
 	array := []int{1, 4, 5, 7, 12, 16}
-	target := 1
+	target := 6
 	// call function
 	result := ceiling(array, target)
 	// Print number of items

@@ -1,5 +1,3 @@
-### Assignment Chapter 9 - Instances
-## 9-8
 class User():
     """"Class for user information"""
     def __init__(self,first_name,last_name,age,email,location):
@@ -47,29 +45,3 @@ class Privileges():
         else:
             print('- This user has no privileges.')                      
 
-
-# users = ['ashik','abir','lamia']
-profile =  User('ashik','mahmud',25,'bmmahmud@gmail.com','Mirpur')
-bm =  Admin('ashik','mahmud',25,'bmmahmud@gmail.com','Mirpur')
-profile.describe_user()
-profile.greet_user() 
-# Priviledge
-bm.privileges.show_privileges()
-
-print("\nAdding privileges...")
-user_privileges = [
-    'can reset passwords',
-    'can moderate discussions',
-    'can suspend accounts',
-    ]
-bm.privileges.privileges = user_privileges 
-print("After adding privilage") 
-bm.privileges.show_privileges()
-# login attempts
-profile.login_attempts()
-profile.login_attempts()
-profile.login_attempts()
-#
-print(f"Login attemp : {profile.login_attemts}") 
-profile.reset_login_attempts() 
-print(f"After Reset, Login attemp : {profile.login_attemts}") 
