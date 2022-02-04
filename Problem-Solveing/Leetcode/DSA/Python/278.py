@@ -6,16 +6,16 @@
 ## Memory Usage: 13.9 MB, less than 98.41% of Python3 online submissions for First Bad Version.
 # class Solution:
 #     def firstBadVersion(self, n: int) -> int:
-#         l,h = 1,n
-#         result = n
-#         while l <= h:
-#             mid = (h+l)//2
-#             if isBadVersion(mid):
-#                 result = mid
-#                 h = mid -1
-#             else:
-#                 l = mid + 1
-#         return result 
+        # l,h = 1,n
+        # result = n
+        # while l <= h:
+        #     mid = (h+l)//2
+        #     if isBadVersion(mid):
+        #         result = mid
+        #         h = mid -1
+        #     else:
+        #         l = mid + 1
+        # return result  
 
 #### best Soluton
 # class Solution:
